@@ -26,4 +26,4 @@
     </div>
 </div>
 
-<?php require "includes/footer.php"; // Include the footer.php file. ?>
+<?php require "includes/footer.php"; // Include footer.php file. ?>
