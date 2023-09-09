@@ -17,14 +17,14 @@ This repository contains the source code and resources for building a PHP MySQL-
 
 1. Clone or download this repository to your local machine.
 2. Set up the appropriate development environment for PHP and MySQL (e.g., XAMPP).
-3. Follow the course lectures or code files to build the project step by step.
+3. Follow the code files to build the project step by step.
 
 ## Directory Structure
 
 - **/src**: Contains the source code for the e-commerce store.
 - **/images**: Store images used in the project.
 - **/sql**: SQL database schema and sample data.
-- **/docs**: Additional documentation or resources (if available).
+- **/docs**: Additional documentation or resources .
 
 ## Usage
 
