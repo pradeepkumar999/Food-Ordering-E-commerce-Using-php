@@ -12,20 +12,19 @@ SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `freshcery`
+-- Database: `freshcery` [freshcery]
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admins`
+-- Table structure for table `admins` [admins]
 --
 
 CREATE TABLE `admins` (
@@ -37,7 +36,7 @@ CREATE TABLE `admins` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `admins`
+-- Dumping data for table `admins` [admins]
 --
 
 INSERT INTO `admins` (`id`, `adminname`, `email`, `mypassword`, `created_at`) VALUES
@@ -47,7 +46,7 @@ INSERT INTO `admins` (`id`, `adminname`, `email`, `mypassword`, `created_at`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `cart`
+-- Table structure for table `cart` [cart]
 --
 
 CREATE TABLE `cart` (
@@ -65,7 +64,7 @@ CREATE TABLE `cart` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categories`
+-- Table structure for table `categories` [categories]
 --
 
 CREATE TABLE `categories` (
@@ -78,7 +77,7 @@ CREATE TABLE `categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `categories`
+-- Dumping data for table `categories` [categories]
 --
 
 INSERT INTO `categories` (`id`, `name`, `image`, `icon`, `description`, `created_at`) VALUES
@@ -90,7 +89,7 @@ INSERT INTO `categories` (`id`, `name`, `image`, `icon`, `description`, `created
 -- --------------------------------------------------------
 
 --
--- Table structure for table `orders`
+-- Table structure for table `orders` [orders]
 --
 
 CREATE TABLE `orders` (
@@ -112,7 +111,7 @@ CREATE TABLE `orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `orders`
+-- Dumping data for table `orders` [orders]
 --
 
 INSERT INTO `orders` (`id`, `name`, `lname`, `company_name`, `address`, `city`, `country`, `zip_code`, `email`, `phone_number`, `order_notes`, `status`, `price`, `user_id`, `created_at`) VALUES
@@ -121,7 +120,7 @@ INSERT INTO `orders` (`id`, `name`, `lname`, `company_name`, `address`, `city`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products`
+-- Table structure for table `products` [products]
 --
 
 CREATE TABLE `products` (
@@ -138,7 +137,7 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `products`
+-- Dumping data for table `products` [products]
 --
 
 INSERT INTO `products` (`id`, `title`, `description`, `price`, `quantity`, `image`, `exp_date`, `category_id`, `status`, `created_at`) VALUES
@@ -152,7 +151,7 @@ INSERT INTO `products` (`id`, `title`, `description`, `price`, `quantity`, `imag
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Table structure for table `users` [users]
 --
 
 CREATE TABLE `users` (
@@ -171,7 +170,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `users`
+-- Dumping data for table `users` [users]
 --
 
 INSERT INTO `users` (`id`, `fullname`, `email`, `username`, `mypassword`, `image`, `address`, `city`, `country`, `zip_code`, `phone_number`, `created_at`) VALUES
@@ -185,7 +184,7 @@ INSERT INTO `users` (`id`, `fullname`, `email`, `username`, `mypassword`, `image
 --
 
 --
--- Indexes for table `admins`
+-- Indexes for table `admins` [admins]
 --
 ALTER TABLE `admins`
   ADD PRIMARY KEY (`id`);
@@ -197,7 +196,7 @@ ALTER TABLE `cart`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `categories`
+-- Indexes for table `categories` [categories]
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`);
